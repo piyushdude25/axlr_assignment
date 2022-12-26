@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { loginUser } from "../redux/actions/userAction";
 // import { loginUser } from "../REDUX/Actions/userActions";
-
+import "./login.css";
 const Login = () => {
   //   const [showPassword, setShowPassword] = useState(false);
   //   const handleClickShowPassword = () => setShowPassword(!showPassword);
@@ -38,8 +38,11 @@ const Login = () => {
   //   }, []);
 
   return (
-    <div>
+    <div className="loginBox">
+      <h2>Login</h2>
+
       <form action="">
+        <p>E-MAIL ID</p>
         <input
           type="email"
           name="email"
@@ -47,6 +50,8 @@ const Login = () => {
           placeholder="Email"
           onChange={(e) => setEmail(e.target.value)}
         />
+        <br />
+        <p>E-MAIL ID</p>
         <input
           type="password"
           name="password"
